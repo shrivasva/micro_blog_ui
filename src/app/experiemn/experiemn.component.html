@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="filter-container bg-light py-3 fixed " style="margin-top: 50px;">
+    <div class="container">
+<ng-container *ngIf="toggleFlag; else toggleOff" >
+    <p>toggle on!</p>
+</ng-container>
+<ng-template #toggleOff>
+    <p>toggle off!</p>
+</ng-template>
+<div class="col-md-3">
+        <label>&nbsp;</label>
+        <button class="btn btn-primary btn-block" (click)="toggle()"> 
+          <i class="fa"></i> Toggle
+        </button>
+      </div>
+</div>
+</div>
+<app-footer>End</app-footer>

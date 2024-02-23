@@ -1,0 +1,26 @@
+<div class="card mb-4 shadow-sm">
+  <div class="card-header bg-primary text-white">
+    <h5 class="card-title">{{ blogData.title }}</h5>
+    <h6 class="card-subtitle mb-2">By {{ blogData.name }}</h6>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Created Date: {{ blogData.created_date }}</p>
+    <p class="card-text">Likes: {{ blogData.likes }}</p>
+    <div *ngIf="blogData.comments && blogData.comments.length > 0">
+      <h6 class="text-primary">Comments:</h6>
+      <ul class="list-group">
+        <li class="list-group-item bg-light" *ngFor="let comment of blogData.comments">
+          <strong>{{ comment.user }}:</strong> {{ comment.comment }}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="blogData.blogs && blogData.blogs.length > 0">
+      <h6 class="text-primary">Related Blogs:</h6>
+      <ul class="list-group">
+        <li class="list-group-item bg-light" *ngFor="let blog of blogData.blogs">
+          <a href="{{ blog.url }}" class="card-link" target="_blank">{{ blog.title }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set container height to fill the entire viewport */
+}
+
+.scrollable-container {
+  flex: 1; /* Allow the container to grow and take remaining space */
+  overflow-y: auto; /* Enable vertical scrolling */
+}

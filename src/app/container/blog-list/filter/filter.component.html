@@ -1,0 +1,24 @@
+<div class="filter-container bg-light py-3 fixed " style="margin-top: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <label for="name">Comment:</label>
+        <input type="text" id="name" class="form-control" [(ngModel)]="name" placeholder="Search by name" (input)="searchByName()" />
+      </div>
+      <div class="col-md-3">
+        <label for="like">Like:</label>
+        <input type="number" id="like" class="form-control" [(ngModel)]="like" placeholder="Search by number of likes" (input)="searchByLikes()" />
+      </div>
+      <div class="col-md-3">
+        <label for="title">Title:</label>
+        <input type="text" id="title" class="form-control" #text placeholder="Search by title" />
+      </div>
+      <div class="col-md-3">
+        <label>&nbsp;</label>
+        <button class="btn btn-primary btn-block" (click)="searchByTitle(text)"> 
+          <i class="fa fa-search"></i> Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
