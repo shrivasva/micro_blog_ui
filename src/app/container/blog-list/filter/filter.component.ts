@@ -1,12 +1,14 @@
 import { Component, Output,EventEmitter, ViewChild, ElementRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { DisabledDirective } from '../../../disabled.directive';
+import { GetTextDirective } from '../../../get-text.directive';
 
 @Component({
   selector: 'app-filter',
   standalone: true,
   templateUrl: './filter.component.html',
   styleUrl: './filter.component.css',
-  imports: [FormsModule]
+  imports: [FormsModule, DisabledDirective, GetTextDirective]
 })
 // export class FilterComponent implements OnInit, OnChanges, DoCheck, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, OnDestroy{
 export class FilterComponent {  
