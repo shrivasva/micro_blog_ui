@@ -1,0 +1,49 @@
+<section class="row vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white custom-card-padding">
+                    <div class="card-body p-5 text-center">
+                        <div class="mb-md-5 mt-md-4 pb-5">
+                            <h2 class="fw-bold mb-3 text-uppercase text-center">Register</h2>
+                            <p class="text-danger mb-3 text-center" id="errMsg"></p>
+                            <p class="text-white-50 mb-3 text-center">Please enter your information to register!</p>
+                            <form (submit)="onRegisterSubmit()">
+                                <div class="mb-3">
+                                    <input type="text" id="firstName" class="form-control form-control-lg"
+                                        placeholder="First Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" id="lastName" class="form-control form-control-lg"
+                                        placeholder="Last Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" id="contactNo" class="form-control form-control-lg"
+                                        placeholder="Contact Number" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" id="emailId" class="form-control form-control-lg"
+                                        placeholder="Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" id="password" class="form-control form-control-lg"
+                                        placeholder="Password" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" id="confirmPassword" class="form-control form-control-lg"
+                                        placeholder="Confirm Password" required>
+                                </div>
+                                <button class="btn btn-outline-light btn-lg px-5" type="submit">Register</button>
+                            </form>
+                        </div>
+                        <div class="text-center mt-3">
+                            <p class="mb-0 text-white-50">Already have an account? <a (click)="navigateToLogin()"
+                                    class="text-white fw-bold">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

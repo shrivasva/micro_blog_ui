@@ -10,6 +10,10 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+navigateToforgotPassword() {
+  this.router.navigate(['/forgot']);
+}
+
   constructor(private router: Router) {
 
   }
@@ -26,5 +30,9 @@ export class LoginComponent {
     // else {
       // this.errMsg = 'INVALID Credential'
     // }
+  }
+
+  navigateToRegister() {
+    this.router.navigate(['/register']);
   }
 }
