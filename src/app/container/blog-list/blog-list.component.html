@@ -1,4 +1,5 @@
 <app-header></app-header>
-<app-filter (nameEvent)="searchByName($event)" (likeEvent)="searchByLike($event)" (titleEvent)="searchByTitle($event)"></app-filter>
-<app-blog *ngFor = "let post of blogData" [blogData]="post" (click)="blogs = post; test()" ></app-blog>
+<app-filter (likeEvent)="searchByLike($event)" (nameEvent)="searchByName($event)"
+            (titleEvent)="searchByTitle($event)"></app-filter>
+<app-blog (click)="blogs = post; test()" *ngFor="let post of blogData" [blogData]="post"></app-blog>
 <app-footer></app-footer>

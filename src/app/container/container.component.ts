@@ -1,8 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
-import { LoginComponent } from "./login/login.component";
-import { BlogListComponent } from "./blog-list/blog-list.component";
-import { BlogDetailComponent } from "./blog-list/blog-detail/blog-detail.component";
-import { NgIf } from '@angular/common';
+import {Component, ViewChild} from '@angular/core';
+import {LoginComponent} from './login/LoginComponent';
+import {BlogListComponent} from "./blog-list/blog-list.component";
+import {BlogDetailComponent} from "./blog-list/blog-detail/blog-detail.component";
+import {NgIf} from '@angular/common';
 
 @Component({
     selector: 'app-container',
@@ -13,10 +13,10 @@ import { NgIf } from '@angular/common';
 })
 export class ContainerComponent {
 
-    @ViewChild(BlogListComponent) blogListComponent : BlogListComponent
+    @ViewChild(BlogListComponent) blogListComponent: BlogListComponent
 
-stest(): any {
-alert("")
-console.log(this.blogListComponent.blogs)
-}
+    stest(): any {
+        alert("")
+        console.log(this.blogListComponent.blogs)
+    }
 }

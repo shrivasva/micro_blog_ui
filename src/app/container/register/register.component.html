@@ -10,35 +10,36 @@
                             <p class="text-white-50 mb-3 text-center">Please enter your information to register!</p>
                             <form (submit)="onRegisterSubmit()">
                                 <div class="mb-3">
-                                    <input type="text" id="firstName" class="form-control form-control-lg"
-                                        placeholder="First Name" required>
+                                    <input class="form-control form-control-lg" id="firstName" placeholder="First Name"
+                                           required type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="text" id="lastName" class="form-control form-control-lg"
-                                        placeholder="Last Name" required>
+                                    <input class="form-control form-control-lg" id="lastName" placeholder="Last Name"
+                                           required type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="tel" id="contactNo" class="form-control form-control-lg"
-                                        placeholder="Contact Number" required>
+                                    <input class="form-control form-control-lg" id="contactNo" placeholder="Contact Number"
+                                           required type="tel">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="email" id="emailId" class="form-control form-control-lg"
-                                        placeholder="Email" required>
+                                    <input class="form-control form-control-lg" id="emailId" placeholder="Email"
+                                           required type="email">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="password" id="password" class="form-control form-control-lg"
-                                        placeholder="Password" required>
+                                    <input class="form-control form-control-lg" id="password" placeholder="Password"
+                                           required type="password">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="password" id="confirmPassword" class="form-control form-control-lg"
-                                        placeholder="Confirm Password" required>
+                                    <input class="form-control form-control-lg" id="confirmPassword" placeholder="Confirm Password"
+                                           required type="password">
                                 </div>
                                 <button class="btn btn-outline-light btn-lg px-5" type="submit">Register</button>
                             </form>
                         </div>
                         <div class="text-center mt-3">
                             <p class="mb-0 text-white-50">Already have an account? <a (click)="navigateToLogin()"
-                                    class="text-white fw-bold">Login</a></p>
+                                                                                      class="text-white fw-bold">Login</a>
+                            </p>
                         </div>
                     </div>
                 </div>

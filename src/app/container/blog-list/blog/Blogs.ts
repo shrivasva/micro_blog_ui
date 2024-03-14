@@ -5,4 +5,4 @@ export interface Blog {
     likes: number;
     comments: any;
     blogs: any;
-  }
+}
