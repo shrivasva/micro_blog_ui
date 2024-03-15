@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ClientService} from '../../client.service';
+import {ClientService} from '../../service/client.service';
 
 @Component({
     selector: 'app-download',
@@ -15,18 +15,17 @@ export class DownloadComponent {
     }
 
     download() {
-        this.clientService.downloadFile().subscribe((response: Blob) => {
-            const blob = new Blob([response]);
-            console.log(blob)
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'filename.png';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-        });
+        // this.clientService.downloadFile().subscribe((response: Blob) => {
+        //     const blob = new Blob([response]);
+        //     const url = window.URL.createObjectURL(blob);
+        //     const a = document.createElement('a');
+        //     a.href = url;
+        //     a.download = 'filename.png';
+        //     document.body.appendChild(a);
+        //     a.click();
+        //     document.body.removeChild(a);
+        //     window.URL.revokeObjectURL(url);
+        // });
     }
 
 }

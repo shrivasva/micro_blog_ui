@@ -12,7 +12,6 @@ export class DisabledDirective {
     }
 
     @Input() set appDisabled(element: any) {
-        console.log(element)
     }
 
 }

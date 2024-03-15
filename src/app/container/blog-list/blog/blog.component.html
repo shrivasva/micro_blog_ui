@@ -10,7 +10,7 @@
             <h6 class="text-primary">Comments:</h6>
             <ul class="list-group">
                 <li *ngFor="let comment of blogData.comments" class="list-group-item bg-light">
-                    <strong>{{ comment.user }}:</strong> {{ comment }}
+                    <strong>{{ comment.user }}:</strong> {{ comment.comment }}
                 </li>
             </ul>
         </div>

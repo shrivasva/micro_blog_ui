@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {StorageService} from "./db/StorageService";
+import {StorageService} from "../storage/StorageService";
 import {Router} from "@angular/router";
 
 

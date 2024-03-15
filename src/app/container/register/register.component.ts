@@ -14,7 +14,6 @@ export class RegisterComponent {
     }
 
     onRegisterSubmit() {
-        console.log("Registered")
     }
 
     navigateToLogin() {

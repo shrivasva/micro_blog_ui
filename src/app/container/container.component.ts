@@ -15,8 +15,4 @@ export class ContainerComponent {
 
     @ViewChild(BlogListComponent) blogListComponent: BlogListComponent
 
-    stest(): any {
-        alert("")
-        console.log(this.blogListComponent.blogs)
-    }
 }

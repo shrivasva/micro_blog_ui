@@ -11,7 +11,7 @@
             <h6>Comments:</h6>
             <ul class="list-group">
                 <li *ngFor="let comment of blogListComponent.blogs.comments" class="list-group-item bg-light">
-                    <strong>{{ comment.user }}:</strong> {{ comment }}
+                    <strong>{{ comment.user }}:</strong> {{ comment.comment }}
                 </li>
             </ul>
         </div>

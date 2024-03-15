@@ -3,6 +3,11 @@ export interface Blog {
     title: string;
     created_date: string;
     likes: number;
-    comments: any;
+    comments: Comment[];
     blogs: any;
+}
+
+export interface Comment {
+    comment: string;
+    user: string;
 }

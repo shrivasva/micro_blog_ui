@@ -20,7 +20,7 @@ export class StorageService {
         }
     }
 
-    getToken() {
+    getToken():any {
         if (isPlatformBrowser(this.platformId)) {
             console.log('browser', localStorage.getItem('token'));
             return localStorage.getItem('token');

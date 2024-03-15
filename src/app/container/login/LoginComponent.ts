@@ -2,9 +2,9 @@ import {NgClass} from '@angular/common';
 import {Component} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {Router} from '@angular/router';
-import {ClientService} from '../../client.service';
+import {ClientService} from '../../service/client.service';
 import {UserModel} from './UserModel';
-import {StorageService} from '../../db/StorageService';
+import {StorageService} from '../../storage/StorageService';
 
 @Component({
     selector: 'app-login',

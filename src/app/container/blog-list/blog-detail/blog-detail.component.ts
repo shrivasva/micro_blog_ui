@@ -18,7 +18,6 @@ export class BlogDetailComponent {
     blogListComponent: BlogListComponent
 
     testNgComponent() {
-        console.log(this.para)
     }
 
 }

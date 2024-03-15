@@ -1,7 +1,7 @@
 import {Component, ElementRef, EventEmitter, Output, ViewChild} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {DisabledDirective} from '../../../disabled.directive';
-import {GetTextDirective} from '../../../get-text.directive';
+import {DisabledDirective} from '../../../utility/disabled.directive';
+import {GetTextDirective} from '../../../utility/get-text.directive';
 
 @Component({
     selector: 'app-filter',
@@ -67,7 +67,6 @@ export class FilterComponent {
     }
 
     searchByTitle(event: HTMLInputElement) {
-        console.log(this.text.nativeElement.value)
         this.titleEvent.emit(event.value);
     }
 }
